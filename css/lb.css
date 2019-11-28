@@ -1,0 +1,85 @@
+.imgs	img{
+			display:block;
+			/* vertical-align: middle; */
+		}
+
+		#box1{
+			margin:10px auto;
+			border:10px solid #f00;
+			position: relative;
+			width: 520px;
+			height: 280px;
+		  overflow: hidden;
+		}
+
+		.imgs{
+			position: absolute;
+			top:0;
+			left:0;
+		}
+
+		.imgs li{
+			position: absolute;
+			top:0;
+			left:0;
+			opacity: 0;
+			z-index:-1;
+			transition: 1s linear;
+		}
+		.imgs .show{
+			opacity: 1;
+			z-index: 0;
+		}
+		.arrows p{
+			width: 20px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			background:black;
+			color:white;
+			font-weight:bold;
+			font-family: 黑体;
+			position: absolute;
+			top:125px;
+			cursor:pointer;
+			opacity: 0;
+      }
+      .box:hover .arrows p{
+      	opacity: .5;
+      }
+      .box .arrows p:hover{
+      	opacity: 1;
+      }
+
+		 .arrows .left{
+      border-radius: 0 15px 15px 0;
+      left:0;
+      padding-left:5px;
+		}
+		.arrows .right{
+			border-radius: 15px 0 0 15px;
+			right:0;
+			padding-right: 5px;
+		}
+		.dots{
+			position: absolute;
+			display: flex;
+      width:100%;
+      bottom:20px;
+      justify-content: center;
+    }
+    .dots li{
+	    width: 10px;
+	    height: 10px;
+	    line-height: 10px;
+	    text-align: center;
+	    font-size: 24px;
+	    background:white ;
+	    border-radius: 50%;
+	    border:3px solid #ddd;
+	    margin: 0 2px;
+	    cursor: pointer;
+    }
+	  .dots .cur{
+			background:red ;
+		}
