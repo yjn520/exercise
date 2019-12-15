@@ -4,149 +4,194 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
-<link rel="stylesheet" href="css/lb.css">
-<link rel="stylesheet" href="css/ct.css">
+   <link rel="stylesheet" href="css/lb.css">
+   <link rel="stylesheet" href="css/ct.css">
 <style>
-#main{
-	width:700px;
-	margin:0 auto;
-}
-#time{
-	width:450px;
-	margin:0 auto;
-}
-ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.tabs {
-		display: flex;
-		margin-left:130px;
-	}
-	.tabs li{
+   #main{
+	   width:700px;
+	   margin:0 auto;
+    }
+   #time{
+	   width:400px;
+	   margin:0 auto;
+    }
+   ul{
+	   list-style: none;
+	   margin: 0;
+	   padding: 0;
+    }
+   .tabs {
+	   display: flex;
+	   margin:0 auto;
+	  }
+	 .tabs li{
+		width: 175px;
+		height:15px;
 		padding:20px;
 		font-size:18px;
-		padding-left: 24px;
-		background:url('images/icon.png') no-repeat 10px;
-	}
-	.tabs .cur{
-		color:#046fbb;
-	}
-	.tabs_box{
-		width: 500px;
-	}
+		line-height: 15px;
+		text-align: center;
+		border:1px solid black;
+		border-radius:15px 15px 0  0;
+		background-color:#CCCCCC;
+  	}
+  	.tabs li:hover{
+     border-bottom:none;
+  	}
+	 .tabs .cur{
+		background-color:#fff;
+	  }
+	 .tabs_box{
+		width: 550px;
+	  margin-top:30px;
+  	}
+	 .contents{
+		margin-top:-2px;
+		height:330px;
+		width:600px;
+		border:1px solid black;
+	 }
 	.contents span{
 		height: 200px;
 		display:none;
 		font-size: 14px;
 		line-height: 1.5;
-	}
+ 	}
 	.contents .show{
 		display: block;;
 	}
 	/* 图片 */
-#box{
-		width: 1200px;
-		height: 450px;
+   #box{
+		width: 520px;
+		height: 280px;
 		display: flex;
 		border:1px solid blue;
 		position: relative;
 		overflow: hidden;
+		margin:0 auto;
+		margin-top:20px;
 	}
+	
 	.yjn{
-		width:600px;
-		height:450px;
+		width:400px;
+		height:280px;
 		position: absolute;
 	}
 	.t1{
     background-image:url('images/t1.jpg');
-    left:-150px;
+    left:-270px;
+    transition:1s;
 	}
 	.t2{
     background-image:url('images/t2.jpg');
-    left:300px;
+    left:130px;
+    transition:1s;
 	}
 	.t3{
     background-image:url('images/t3.jpg');
-    left:600px;
+    left:260px;
+    transition:1s;
 	}
 	.t4{
     background-image:url('images/t4.jpg');
-    left:900px;
+    left:390px;
+    transition:1s;
 	}
+	.pic{
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 280px;
+    background-color: #335544;
+    opacity: 0.6;
+  }
+    .pic:hover{
+    	opacity: 0;
+
+    }
 </style>
 <body>
-	<div id="main">
+<div id="main">
 	<div id="time"></div>
-	<div id="tabs1" class="tabs_box">
-		<ul class="tabs">
-			<li class="cur">轮播图</li>
-			<li>抽屉</li>
-			<li>图片切换</li>
-		</ul>
-		<div class="contents">
-			<span class="show">
-			<div id="box1" class="box">
+	  <div id="tabs1" class="tabs_box">
+		    <ul class="tabs">
+			    <li class="cur">轮播图</li>
+			    <li>抽屉</li>
+			    <li>图片切换</li>
+		    </ul>
+		  <div class="contents">
+			  <span class="show">
+			    <div id="box1" class="box">
 		<!-- 图片 -->
-		<ul class="imgs">
-			<li class="show"><a href="#"><img src="images/1.jpg" alt="1"></a></li>
-			<li><a href="#"><img src="images/2.jpg" alt="2"></a></li>
-			<li><a href="#"><img src="images/3.jpg" alt="3"></a></li>
-			<li><a href="#"><img src="images/4.jpg" alt="4"></a></li>
-			<li><a href="#"><img src="images/5.jpg" alt="5"></a></li>
-		</ul>
+		    <ul class="imgs">
+			    <li class="show"><a href="#"><img src="images/1.jpg" alt="1"></a></li>
+			    <li><a href="#"><img src="images/2.jpg" alt="2"></a></li>
+			    <li><a href="#"><img src="images/3.jpg" alt="3"></a></li>
+			    <li><a href="#"><img src="images/4.jpg" alt="4"></a></li>
+			    <li><a href="#"><img src="images/5.jpg" alt="5"></a></li>
+		    </ul>
 		<div class="arrows">
-			<!-- 左箭头 -->
-		<p class="left">&lt;</p>
-		<!-- 右箭头 -->
-		<p class="right">&gt;</p>
-		</div>
-		<!-- 底部按钮 -->
-		<ul class="dots">
-			<li class="cur"></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
-</span>
+			  <!-- 左箭头 -->
+		    <p class="left">&lt;</p>
+		    <!-- 右箭头 -->
+		    <p class="right">&gt;</p>
+		  </div>
+		    <!-- 底部按钮 -->
+		  <ul class="dots">
+			  <li class="cur"></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+		  </ul>
+	  </div>
+        </span>
+<!-- 抽屉 -->
 			<span>
 				<div id="ct1" class="ctboxs">
-		 <div class="ctbox ct1">
-		 	<div class="title">交通行业</div>
-		 	<div class="cont">
-		 		<img src="images/001.jpg" alt="1"></div>
-		 </div>
-		 <div class="ctbox ct2">
-		 	<div class="title">司法行业</div>
-		 	<div class="cont">
-		 		<img src="images/001.jpg" alt="2"></div>
-		 </div>
-		 <div class="ctbox ct3">
-		 	<div class="title">政府行业</div>
-		 	<div class="cont">
-		 		<img src="images/001.jpg" alt="3"></div>
-		 </div>
-		 <div class="ctbox ct4">
-		 	<div class="title">其它行业</div>
-		 	<div class="cont">
-		 		<img src="images/001.jpg" alt="4"></div>
-		 </div>
-		</div>
-	</span>
+		      <div class="ctbox ct1">
+		 	    <div class="title">风之痕</div>
+		 	    <div class="cont">
+		 	  	<img src="images/001.jpg" alt="1"></div>
+		    </div>
+		    <div class="ctbox ct2">
+		 	    <div class="title">素还真</div>
+		 	    <div class="cont">
+		 		  <img src="images/002.jpg" alt="2"></div>
+		    </div>
+		    <div class="ctbox ct3">
+		 	    <div class="title">一页书</div>
+		 	    <div class="cont">
+		 		  <img src="images/003.jpg" alt="3"></div>
+		    </div>
+		    <div class="ctbox ct4">
+		     	<div class="title">叶小钗</div>
+		    	<div class="cont">
+		 	  	<img src="images/004.jpg" alt="4"></div>
+		    </div>
+		   </div>
+	    </span>
+<!-- 图片 -->
 			<span>
-<div id="box">
-	<div class="t1 yjn"></div>
-	<div class="t2 yjn"></div>
-	<div class="t3 yjn"></div>
-	<div class="t4 yjn"></div>
+      <div id="box">
+       
+	        <div class="t1 yjn"></div>
+	     
+	      
+	        <div class="t2 yjn"></div>
+	   
+	      
+	        <div class="t3 yjn"></div>
+	      
+	     
+	        <div class="t4 yjn"></div>
+	      
+	    </div>
+    </span>
 	</div>
-</span>
-		</div>
-	</div>
-	</div>
+ </div>
+</div>
+
    <script src="js/lb.js"></script>
    <script src="js/ct.js"></script>
    <script src="js/tp.js"></script>

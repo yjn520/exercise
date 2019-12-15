@@ -1,24 +1,26 @@
 .ctboxs{
-	width: 830px;
-	height: 470px;
+	width: 520px;
+	height: 280px;
 	position: relative;
 	overflow: hidden;
+	margin:0 auto;
+	margin-top:20px;
 }
 .ctboxs .ctbox{
-	width: 650px;
-	height: 470px;
+	width: 430px;
+	height: 280px;
 	display: flex;
 	position: absolute;
 	top:0;
 	transition: 2s linear;
 }
 .ctboxs .ct1{left:0;}
-.ctboxs .ct2{left:650px;}
-.ctboxs .ct3{left:710px;}
-.ctboxs .ct4{left:770px;}
+.ctboxs .ct2{left:430px;}
+.ctboxs .ct3{left:460px;}
+.ctboxs .ct4{left:490px;}
 .ctboxs .ctbox .title{
 	font-size: 22px;
-	padding: 130px 19px 0;
+	padding: 80px 2px 0;
 	line-height: 36px;
 	color:white;
 }
